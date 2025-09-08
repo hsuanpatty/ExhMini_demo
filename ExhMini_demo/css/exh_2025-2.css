@@ -535,7 +535,7 @@ figure.hotSale-box a {
 /*============== ExhMiniMain ==============*/
 
 #ExhMiniMain {
-    padding: 20px 0 10px;
+    padding: 20px 0 0;
 }
 
 #ExhMiniMain h3.main-title {
@@ -748,7 +748,7 @@ h3.ExhMini-box-title a {
 .selectArry-Group {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 70px 30px;
+    padding: 0 70px 30px;
     justify-content: center;
     align-items: center;
 }
@@ -809,13 +809,13 @@ h3.ExhMini-box-title a {
 }
 
 .animated-container input[type="radio"]:checked + label {
-    font: 600 15px "微軟正黑體";
+    font: 600 17px "微軟正黑體";
     color: #8c001a;
     cursor: pointer;
 }
 
 .animated-container input[type="radio"] + label {
-    font: 600 15px "微軟正黑體";
+    font: 600 17px "微軟正黑體";
     color: #555;
     cursor: pointer;
 }
@@ -927,8 +927,8 @@ h3.ExhMini-box-title a {
         justify-content: center;
     }
 
-    #ExhMiniMain {
-        padding: 20px 0 0;
+    #ExhMiniTop {
+        margin-top: 60px;
     }
 }
 
