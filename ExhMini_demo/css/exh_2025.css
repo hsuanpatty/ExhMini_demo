@@ -535,8 +535,7 @@ figure.hotSale-box a {
 /*============== ExhMiniMain ==============*/
 
 #ExhMiniMain {
-    padding: 20px 0;
-    margin-bottom: 40px;
+    padding: 20px 0 0;
 }
 
 #ExhMiniMain h3.main-title {
@@ -746,111 +745,97 @@ h3.ExhMini-box-title a {
 
 
 /* select-cat */
-
-.sort-cat {
-    margin: 0 10px 0 0;
+.selectArry-Group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 30px;
+    justify-content: center;
+    align-items: center;
 }
 
- .select-cat-sort .form-control {
-    height: 30px;
-    padding: 3px 35px 3px 10px;
-    background: #fdfdfd;
-    color:#4e4e4e;
-    font-size: 15px;
-    font-family: Microsoft JhengHei, "微軟正黑體";
-    font-weight: 500;
+.selectArry-Group .selectArry-title {
+    font: 600 15px "微軟正黑體";
+    color: rgb(37, 37, 37);
+    padding-top: 2px;
+    padding-right: 10px;
+}
+
+.selectArry-Group .wrapper {
+    padding-top: 10px;
+}
+
+
+.animated-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.animated-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.animated-container  input[type="radio"]:checked {
+    border-color: #8c001a;
+    background-color: #8c001a;
+    
+}
+
+.animated-container input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    transition:  all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animated-container input[type="radio"]:checked::after {
+    content: "\f00c";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: 'FontAwesome';
+
+}
+
+.animated-container p {
+    font: 600 17px "微軟正黑體";
+    color: #555;
+}
+
+.animated-container input[type="radio"]:checked + label {
+    font: 600 17px "微軟正黑體";
+    color: #8c001a;
     cursor: pointer;
 }
 
-.input-group-addon {
-    border: none;
-    background: transparent;
-    margin: 0;
-    padding: 5px 5px;
-    width: auto;
-    font-size: 14px;
-    color: #8c001a;
-    font-weight: 300;
+.animated-container input[type="radio"] + label {
+    font: 600 17px "微軟正黑體";
+    color: #555;
+    cursor: pointer;
 }
 
-.category-sorting>div {
-    display: inline-block;
-    vertical-align: middle;
-    justify-items: center;
-    align-items: center;
+.option-wrapper {
     display: flex;
-}
-
-.category-sorting>div>* {
-    width: auto;
-    float: left;
-    position: relative;
-}
-
-.category-sorting {
-    text-align: right;
-    float: right;
-}
-
-.category-info {
-    background: #fdfaf7;
-    margin-bottom: 30px;
-    padding: 8px 15px;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    font-family: "Noto Sans TC";
 }
 
-.category-sorting .input-group-addon {
-    border: none;
-    background: transparent;
-    margin: 0;
-    padding: 5px 5px;
-    width: auto;
-    font-size: 16px;
-    font-family: "Noto Sans TC";
-    color: #141414;
-    font-weight: 400;
-    white-space:nowrap;
-}
 
-.form-control {
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid var(--border-color);
-    -webkit-box-shadow: none;
-    box-shadow: none;
+#sort-travel:checked ~ .wrapper .ExhMiniItinerary  [data="travel"]{
+	display: none;
 }
-
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.select-cat-sort::after, .select-cat-limit::after {
-    font-family: 'fontawesome';
-    content: '\f107';
-    font-size: 16px;
-    position: absolute;
-    right: 10px;
-    top: 6px;
-    pointer-events: none;
-    color: var(--primary-color);
+#sort-date:checked ~ .wrapper .ExhMiniItinerary  [data="date"]{
+	display: none;
 }
 
 /*============== 平版尺寸 ==============*/
@@ -936,6 +921,19 @@ h3.ExhMini-box-title a {
     figure.hotSale-box:hover img,
     figure.hotSale-video:hover .video_container {
         transform: translateY(0);
+    }
+
+    /* 2025 新增 */
+
+    .selectArry-Group {
+        padding: 20px 20px 30px;
+    }
+    .animated-box {
+        justify-content: center;
+    }
+
+    #ExhMiniTop {
+        margin-top: 60px;
     }
 }
 
