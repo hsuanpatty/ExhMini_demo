@@ -767,7 +767,7 @@ h3.ExhMini-box-title a {
 
 .animated-box{
     display: flex;
-    justify-content: end;
+    justify-content: left;
     align-items: center;
 }
 
@@ -806,6 +806,11 @@ h3.ExhMini-box-title a {
     
     font-family: 'FontAwesome';
 
+}
+
+.animated-container p {
+    font: 600 17px "微軟正黑體";
+    color: #555;
 }
 
 .animated-container input[type="radio"]:checked + label {
