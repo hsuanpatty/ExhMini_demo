@@ -745,6 +745,10 @@ h3.ExhMini-box-title a {
 
 
 /* select-cat */
+#ExhMiniMain {
+    padding: 20px 0 10;
+}
+
 .selectArry-Group {
     display: flex;
     flex-wrap: wrap;
