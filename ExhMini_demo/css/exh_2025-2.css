@@ -535,7 +535,7 @@ figure.hotSale-box a {
 /*============== ExhMiniMain ==============*/
 
 #ExhMiniMain {
-    padding: 20px 0;
+    padding: 20px 0 10px;
 }
 
 #ExhMiniMain h3.main-title {
@@ -745,10 +745,6 @@ h3.ExhMini-box-title a {
 
 
 /* select-cat */
-#ExhMiniMain {
-    padding: 20px 0 10;
-}
-
 .selectArry-Group {
     display: flex;
     flex-wrap: wrap;
